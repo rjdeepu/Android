@@ -1,0 +1,156 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/light_blue"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:text="Quiz Rules"
+            android:textSize="24sp"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="How many Questions can the Quiz app have?" />
+
+        <RadioGroup
+            android:id="@+id/rg_one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onfirstQuestionRbClicked"
+                android:textSize="14sp"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/rb_eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onfirstQuestionRbClicked"
+                android:textSize="14sp"
+                android:text="8" />
+
+            <RadioButton
+                android:id="@+id/rb_twenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onfirstQuestionRbClicked"
+                android:textSize="14sp"
+                android:text="20" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="What are the layout Best Practices?" />
+
+        <CheckBox
+            android:id="@+id/text_in_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="Text sizes are defined in dp"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/length_in_sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="Lengths are defined in sp"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/none_of_the_above"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="None of the Above"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="What is the minimum number of View varieties to be included?" />
+
+        <EditText
+            android:id="@+id/quiz_3_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:text="Should we post the Projects in Forums?" />
+
+        <RadioGroup
+            android:id="@+id/rg_four"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_four_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onfourthQuestionRbClicked"
+                android:textSize="14sp"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/rb_four_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onfourthQuestionRbClicked"
+                android:textSize="14sp"
+                android:text="No" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="24dp"
+            android:onClick="submitQuiz"
+            android:textSize="18sp"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/quiz_score_total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>
