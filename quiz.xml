@@ -15,16 +15,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="@dimen/margin_top"
             android:text="Quiz Rules"
-            android:textSize="24sp"
+            android:textSize="@dimen/header"
             android:textAllCaps="true" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:textSize="16sp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textSize="@dimen/question"
             android:text="How many Questions can the Quiz app have?" />
 
         <RadioGroup
@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onfirstQuestionRbClicked"
-                android:textSize="14sp"
+                android:textSize="@dimen/answer"
                 android:text="2" />
 
             <RadioButton
@@ -46,7 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onfirstQuestionRbClicked"
-                android:textSize="14sp"
+                android:textSize="@dimen/answer"
                 android:text="8" />
 
             <RadioButton
@@ -54,15 +54,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onfirstQuestionRbClicked"
-                android:textSize="14sp"
+                android:textSize="@dimen/answer"
                 android:text="20" />
         </RadioGroup>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:textSize="16sp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textSize="@dimen/question"
             android:text="What are the layout Best Practices?" />
 
         <CheckBox
@@ -70,9 +70,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="16dp"
-            android:paddingTop="16dp"
             android:text="Text sizes are defined in dp"
-            android:textSize="14sp" />
+            android:textSize="@dimen/answer" />
 
         <CheckBox
             android:id="@+id/length_in_sp"
@@ -80,7 +79,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="16dp"
             android:text="Lengths are defined in sp"
-            android:textSize="14sp" />
+            android:textSize="@dimen/answer" />
 
         <CheckBox
             android:id="@+id/none_of_the_above"
@@ -88,27 +87,27 @@
             android:layout_height="wrap_content"
             android:paddingLeft="16dp"
             android:text="None of the Above"
-            android:textSize="14sp" />
+            android:textSize="@dimen/answer" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:textSize="16sp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textSize="@dimen/question"
             android:text="What is the minimum number of View varieties to be included?" />
 
         <EditText
             android:id="@+id/quiz_3_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
+            android:textSize="@dimen/answer"
             android:inputType="text" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:textSize="16sp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textSize="@dimen/question"
             android:text="Should we post the Projects in Forums?" />
 
         <RadioGroup
@@ -122,7 +121,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onfourthQuestionRbClicked"
-                android:textSize="14sp"
+                android:textSize="@dimen/answer"
                 android:text="Yes" />
 
             <RadioButton
@@ -130,17 +129,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onfourthQuestionRbClicked"
-                android:textSize="14sp"
+                android:textSize="@dimen/answer"
                 android:text="No" />
         </RadioGroup>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/margin_top"
             android:layout_marginLeft="100dp"
             android:layout_marginRight="100dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="@dimen/margin_top"
             android:onClick="submitQuiz"
             android:textSize="18sp"
             android:text="Submit" />
