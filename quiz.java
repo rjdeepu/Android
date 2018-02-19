@@ -66,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void submitQuiz(View view) {
 
+        String str_toast_score = getString(R.string.toast_score);
+        String str_by_four = getString(R.string.by_four);
+
         //Question 2
         CheckBox textInDp = (CheckBox) findViewById(R.id.text_in_dp);
         boolean selectedTextInDp = textInDp.isChecked();
@@ -121,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //Toast the Final Score in the Display below
-        Toast.makeText(getApplicationContext(), "Your Score:" + score + "/4", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), str_toast_score + score + str_by_four, Toast.LENGTH_SHORT).show();
 
         //Reset all values/boxes after Submit
         resetAll();
