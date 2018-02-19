@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <dimen name="header">24sp</dimen>
+    <dimen name="question">17sp</dimen>
+    <dimen name="answer">15sp</dimen>
+    <dimen name="cb_left_padding">16dp</dimen>
+    <dimen name="button">18sp</dimen>
+    <dimen name="button_lr_margin">100sp</dimen>
+    <dimen name="margin_top">16dp</dimen>
+    <string name="toast_score">Your Score:</string>
+    <string name="by_four">/4</string>
+    <color name="light_blue">#FAFAFA</color>
+</resources>
